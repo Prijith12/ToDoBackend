@@ -127,4 +127,7 @@ router.post('/addToDo',verifyUser,async(req,res)=>{
     }
     
   });
+  router.get('/',(req,res)=>{
+    res.json("ToDo backend running");
+  })
 module.exports = router;
